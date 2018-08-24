@@ -1,4 +1,10 @@
 def get_args(args):
+    """
+    Will manipulate all received parameters
+    ---------------------------------------
+    required: args [0] -> word
+    optional: args [1] -> maximum size
+    """
     resultado = {}
     if len(args) == 2:
         resultado['palavra'] = args[0]
@@ -10,6 +16,9 @@ def get_args(args):
 
 
 def try_to_int(number):
+    """
+    Will try to transform the parameter into integer
+    """
     try:
         return int(number)
     except:
